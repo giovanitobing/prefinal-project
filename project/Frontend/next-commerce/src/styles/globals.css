@@ -1,0 +1,178 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    /* url("../components/DetailedShabbyHapuka.mp4"); */
+      url("../components/ScarceEverlastingAustralianfurseal-mobile.mp4");
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    -45deg,
+    #004242,
+    #005555,
+    #01694a,
+    #03a75a,
+    #03bb34
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.border-sign-in {
+  border: solid 4px;
+  border-image-source: linear-gradient(to bottom right, #005555, #a1e3d8);
+  border-image-slice: 4;
+}
+
+/* membuat tampilan text glow in the dark 
+   background body harus gelap*/
+.light-login-text {
+  /* color: var(--var-color); */
+  color: #069a8e;
+  position: relative;
+}
+
+.light-login-text::before {
+  position: absolute;
+  content: attr(data-text);
+  text-shadow: 0px 0px 20px var(--var-color);
+  filter: blur(10px) brightness(0);
+  animation: flicker 1s linear forwards;
+  animation-delay: 1s;
+}
+
+@keyframes flicker {
+  0% {
+    filter: blur(5px) brightness(1);
+  }
+  3% {
+    filter: blur(5px) brightness(0);
+  }
+  6% {
+    filter: blur(5px) brightness(0);
+  }
+  7% {
+    filter: blur(5px) brightness(1);
+  }
+  8% {
+    filter: blur(5px) brightness(0);
+  }
+  9% {
+    filter: blur(5px) brightness(1);
+  }
+  10% {
+    filter: blur(5px) brightness(0);
+  }
+  2% {
+    filter: blur(5px) brightness(1);
+  }
+}
+
+/* membuat tampilan bayangan text berganti warna 
+ harus input background url*/
+.shadow-text {
+  background: #005555;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text 7.5s linear infinite;
+}
+
+@keyframes text {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@font-face {
+  font-family: chitchat;
+  src: url("./fonts/Monoton-Regular.ttf");
+}
+
+.textlogo {
+  font-family: "chitchat";
+  font-variant: inherit;
+}
+
+@font-face {
+  font-family: bungee;
+  src: url("./fonts/BungeeShade-Regular.ttf");
+}
+
+.textlogo {
+  font-family: "bungee";
+  font-variant: inherit;
+}
+
+.textwrapper {
+  color: rgba(225, 225, 225, 0.01);
+  /* background-image: url("https://picsum.photos/id/974/700"); */
+  background-image: url("https://img.freepik.com/free-photo/abstract-fire-desktop-wallpaper-realistic-blazing-flame-image_53876-147448.jpg?w=2000");
+  background-repeat: repeat;
+  background-clip: text;
+  animation: animate 15s ease-in-out infinite;
+
+  font-weight: 1000;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    background-position: left top;
+  }
+  25% {
+    background-position: right bottom;
+  }
+  50% {
+    background-position: left bottom;
+  }
+  75% {
+    background-position: right top;
+  }
+}
+
+.garis {
+  border: double 4px transparent;
+  border-radius: 10px;
+  background-image: linear-gradient(#1d2a3a, #1d2a3a),
+    linear-gradient(to right, #005555, #069a8e, #f7ff93);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}

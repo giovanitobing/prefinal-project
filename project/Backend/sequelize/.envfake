@@ -1,0 +1,23 @@
+    PORT = 2000
+
+    MYSQL_USERNAME =  "root"
+    MYSQL_PASSWORD  = "tobing16"
+    MYSQL_DB_NAME = "db_sosmed"
+    MYSQL_PORT = 3306
+
+    JWT_SECRET_KEY = "lucu"
+
+
+    UPLOAD_FILE_DOMAIN = "localhost:2000"
+
+    PATH_POST = "postimage"
+    USER_AVATAR = "avatar"
+
+
+    NODE_MAILER_EMAIL = "raumdauter08@gmail.com"
+
+    NODE_MAILER_PASSWORD = "ywoessqxswcfvmkb"
+    
+
+    LINK_VERIFY = "http://localhost:3000/auth/verify/"
+    

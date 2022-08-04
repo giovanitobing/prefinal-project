@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "udin",
+      "email": "udin@mail.com",
+      "password": "udin123",
+      "full_name": "udin sukamandi"
+    },
+
+    {
+      "id": 2,
+      "username": "udan",
+      "email": "udan@mail.com",
+      "password": "udan123",
+      "full_name": "udan sukamandi"
+    }
+  ]
+}
